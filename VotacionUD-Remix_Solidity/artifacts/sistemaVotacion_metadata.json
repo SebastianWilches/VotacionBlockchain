@@ -1,0 +1,204 @@
+{
+	"compiler": {
+		"version": "0.8.15+commit.e14f2714"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32[]",
+						"name": "nombresCandidatos",
+						"type": "bytes32[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "proposal",
+						"type": "uint256"
+					}
+				],
+				"name": "Votar",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "adminVotacion",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "candidatoGanador",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "candidatoGanador_",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "candidatos",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "nombreCandidato",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "contadorVotos",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "voter",
+						"type": "address"
+					}
+				],
+				"name": "darDerechoAVotar",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					}
+				],
+				"name": "delegado",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "nomCandidatoGanador",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "nomCandidatoGanador_",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "votantes",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "pesoVoto",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isVoto",
+						"type": "bool"
+					},
+					{
+						"internalType": "address",
+						"name": "delegado",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "indiceVoto",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"title": "Sistema de votación.",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"Votar(uint256)": {
+					"notice": "Suma un voto al candidato seleccionado"
+				},
+				"constructor": {
+					"notice": "Añade las direcciones de los candidatos del input a un array de candidatos."
+				},
+				"delegado(address)": {
+					"notice": "Delegate your indiceVoto to the voter `to`."
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"VotacionUD/votacionUD.sol": "sistemaVotacion"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"VotacionUD/votacionUD.sol": {
+			"keccak256": "0xbdba9a95b057e61c868d15263ff30e7a30747e6f72dfcc20dca96d3dfe8d82ed",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://9df08aa65b40c39311d665432a3165192fe661b1a847f2aef69887b78b6fac92",
+				"dweb:/ipfs/QmVioLNb2jTmD7dfd6MURQqkKHFzkx2phBF4qUGtKoMThB"
+			]
+		}
+	},
+	"version": 1
+}
